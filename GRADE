@@ -1,0 +1,15 @@
+daniel.m.darcy
+a3
+`make flash` compiles and flashes `powerModes.c`
+
+name and pinout in comments - thank you!
+
+all modes operate correctly
+
+mode 0 (no light on powerup/reset) should be avoided, even though it does not repeat. no points off for this, but it _is_ out of spec.
+
+both green and blue are running on timer/signal. green on timer/interrupt would not require P1SEL and would require a TIMER0_A0_VECTOR interrupt handler.
+
+good, thorough, fairly neat comments (though you should comment interrupt handlers as well).
+
+18/20
